@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/blocks')
+  @Get('/api/blocks')
   getBlocks() {
     return this.appService.getBlocks();
   }
