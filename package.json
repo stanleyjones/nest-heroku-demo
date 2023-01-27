@@ -6,8 +6,8 @@
     "client"
   ],
   "scripts": {
-    "prestart": "npm run build",
     "start": "npm start --workspace=api",
     "build": "npm run build --workspace=client"
+    "start:prod": "npm run build --workspace=client && npm run start:prod --workspace=client"
   }
 }
