@@ -2,12 +2,11 @@
   "name": "nest-heroku-demo",
   "version": "0.1.0",
   "workspaces": [
-    "api",
-    "client"
+    "client",
+    "server"
   ],
   "scripts": {
-    "build:client": "npm run build --workspace=client",
-    "start:api": "npm run start:prod --workspace=api",
-    "start:prod": "npm run build:client && npm run start:api"
+    "build": "npm run build --workspaces",
+    "start": "npm run start:prod --workspace=server"
   }
 }
